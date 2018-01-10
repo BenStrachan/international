@@ -1,0 +1,101 @@
+<div class="row">
+  <div class="col-md-6 col-sm-6 col-6">
+    <h1>Practitioner</h1>
+  </div>
+  <div class="col-md-6 col-sm-6 col-6 text-right">
+      <a class="btn btn-outline-primary" href="<%= edit_practitioner_path(@practitioner) %>">Edit</a>
+  </div>
+</div>
+<hr>
+<p>
+  <strong>First name:</strong>
+  <%= @practitioner.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @practitioner.last_name %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @practitioner.active %>
+</p>
+
+<p>
+  <strong>Education:</strong>
+  <%= @practitioner.education %>
+</p>
+
+<p>
+  <strong>Profession:</strong>
+  <%= @practitioner.profession %>
+</p>
+
+<p>
+  <strong>Provider number:</strong>
+  <%= @practitioner.provider_number %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @practitioner.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @practitioner.phone %>
+</p>
+
+<p>
+  <strong>Mobile:</strong>
+  <%= @practitioner.mobile %>
+</p>
+
+<p>
+  <strong>Address1:</strong>
+  <%= @practitioner.address1 %>
+</p>
+
+<p>
+  <strong>Address2:</strong>
+  <%= @practitioner.address2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @practitioner.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @practitioner.state %>
+</p>
+
+<p>
+  <strong>Postcode:</strong>
+  <%= @practitioner.postcode %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @practitioner.country %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @practitioner.summary %>
+</p>
+
+<p>
+  <strong>Business:</strong>
+  <%= @practitioner.business_id %>
+</p>
+
+<p>
+  <strong>Business name:</strong>
+  <%= @practitioner.business_name %>
+</p>
+
+<%= link_to 'Edit', edit_practitioner_path(@practitioner) %> |
+<%= link_to 'Back', practitioners_path %>

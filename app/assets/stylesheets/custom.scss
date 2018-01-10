@@ -1,0 +1,120 @@
+body {
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+.has-error.form-group {
+  .form-control {
+    border-color: #dc3545;
+  }
+  .help-block, label {
+    color: #dc3545,
+  }
+}
+
+.breadcrumb-box {
+  .breadcrumb {
+    border-radius: 0;
+    background: 0;
+    padding-left: 0px;
+  }
+}
+.pagination {
+  a, .current {
+    font-weight: 500;
+    display: inline-block;
+    margin: 5px;
+  }
+}
+
+main {
+  margin-top: 80px;
+}
+
+.user-table {
+  color: green;
+}
+
+.review-table {
+  color: red;
+}
+
+.run-table {
+  color: blue;
+}
+
+.table {
+  thead {
+    th {
+      font-weight: 500;
+    }
+  }
+}
+
+label {
+  font-weight: 500;
+  color: #555;
+}
+
+.card-padding {
+  padding: 30px;
+}
+
+.handover_search {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #ddd;
+}
+
+.hero-background {
+  background-image: image-url('backgrounds/joy.jpg');
+  height: 650px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: transparent;
+  background-size: cover;
+}
+
+.hero-heading {
+  color: white;
+  font-size: 70px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  margin-top: 250px;
+}
+
+.hero-subheading {
+  color: white;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+.section-100 {
+  padding: 100px;
+}
+
+.blue {
+  color: #013b99;
+}
+
+.search-label {
+  margin-top: 10px;
+}
+
+.navbar {
+  box-shadow: 0px 1px #BEBEBE;
+  .navbar-brand {
+    background: image-url('logo.png');
+    width: 40px;
+    display: inline-block;
+    height: 40px;
+    background-size: cover;
+  }
+}
+
+.search-button {
+  margin-top: 10px;
+}

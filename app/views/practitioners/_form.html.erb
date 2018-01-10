@@ -1,0 +1,107 @@
+<%= form_with(model: practitioner, local: true, class: "form-horizontal") do |form| %>
+  <% if practitioner.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(practitioner.errors.count, "error") %> prohibited this practitioner from being saved:</h2>
+
+      <ul>
+      <% practitioner.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, id: :practitioner_first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, id: :practitioner_last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :active %>
+    <%= form.check_box :active, id: :practitioner_active %>
+  </div>
+
+  <div class="field">
+    <%= form.label :education %>
+    <%= form.text_field :education, id: :practitioner_education %>
+  </div>
+
+  <div class="field">
+    <%= form.label :profession %>
+    <%= form.text_field :profession, id: :practitioner_profession %>
+  </div>
+
+  <div class="field">
+    <%= form.label :provider_number %>
+    <%= form.text_field :provider_number, id: :practitioner_provider_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :practitioner_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone, id: :practitioner_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mobile %>
+    <%= form.text_field :mobile, id: :practitioner_mobile %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address1 %>
+    <%= form.text_field :address1, id: :practitioner_address1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address2 %>
+    <%= form.text_field :address2, id: :practitioner_address2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city, id: :practitioner_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.text_field :state, id: :practitioner_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :postcode %>
+    <%= form.text_field :postcode, id: :practitioner_postcode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country, id: :practitioner_country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :summary %>
+    <%= form.text_field :summary, id: :practitioner_summary %>
+  </div>
+
+  <div class="field">
+    <%= form.label :business_id %>
+    <%= form.text_field :business_id, id: :practitioner_business_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :business_name %>
+    <%= form.text_field :business_name, id: :practitioner_business_name %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
