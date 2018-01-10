@@ -76,6 +76,15 @@ label {
   background-size: cover;
 }
 
+.sub-hero-background {
+  background-image: image-url('backgrounds/joy.jpg');
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: transparent;
+  background-size: cover;
+}
+
 .hero-heading {
   color: white;
   font-size: 70px;
@@ -83,6 +92,14 @@ label {
   background: rgba(0, 0, 0, 0.7);
   padding: 10px;
   margin-top: 250px;
+}
+
+.subpage-hero-heading {
+  color: white;
+  font-size: 70px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
 }
 
 .hero-subheading {
